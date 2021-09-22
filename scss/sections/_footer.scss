@@ -1,0 +1,13 @@
+@use '../customs' as *; 
+
+footer {
+    background-color: $black;
+    font-size: 0.9rem;
+    height: 2.5rem;
+    opacity: 0.8;
+
+    p {
+        padding-top: 0.5rem;
+        color: $gray-200;
+    }
+}

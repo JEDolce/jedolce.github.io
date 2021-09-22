@@ -1,0 +1,102 @@
+@use '../customs' as *;
+@use '../config/mixins' as *;
+
+.bloque-2-section {
+    position: relative;
+    padding: 4rem 0 4rem 0;
+    background-color: $ligth-green;
+    font-family: 'Montserrat', sans-serif;
+
+
+    @include media-breakpoint-up(md) {
+        height: 30rem;
+        padding: 6rem 0 0 0;
+    } 
+
+    .gracias {
+        font-size: 1.1rem;
+        margin-top: 6rem;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0rem;
+
+            p {
+                font-size: 1.1rem;
+                margin: 5rem 0 5rem 3rem;
+            }
+        } 
+
+        @include media-breakpoint-up(lg) {
+
+            p {
+                font-size: 1.3rem;
+                margin-bottom: 3.5rem;
+            }
+        }
+    }
+
+    i {
+        color: $white;
+        font-size: 3.5rem;
+        line-height: 1.5rem;
+    }
+
+    h4 {
+        margin: 2rem 0 2rem 0;
+    }
+
+    P {
+        margin-bottom: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .datos {
+        @include absCenter;
+        background-color: $white;
+        width: 19rem;
+        height: 19rem;
+        border-radius: 10px;
+        font-weight: 500;
+        
+        .close {
+            position: absolute;
+            top: 2%;
+            left: 90%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: $black;
+        }
+
+        h3 {
+            color: $beige;
+            margin: 1.5rem 0 1.5rem 0;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .display {
+        display: none;  
+    }
+
+    .fondo {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: linear-gradient($beige, transparent);
+    }
+}
+
+
+
+
+
+        
+
