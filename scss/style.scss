@@ -1,0 +1,17 @@
+@use 'customs';
+
+// IMPORT CONFIG
+@use 'config/animations';
+@use 'config/mixins';
+@use 'config/buttons';
+@use 'config/typos';
+
+// IMPORT SECTIONS
+@use 'sections/portada';
+@use 'sections/countdown';
+@use 'sections/location';
+@use 'sections/cbu';
+@use 'sections/gallery';
+@use 'sections/contact';
+@use 'sections/footer';
+@use 'sections/musica';

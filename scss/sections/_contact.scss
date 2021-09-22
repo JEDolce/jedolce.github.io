@@ -1,0 +1,82 @@
+@use '../customs' as *;
+
+.contact-section {
+    background-color: $beige-2;
+    font-family: 'Montserrat', sans-serif;
+
+    @include media-breakpoint-up(md) {
+
+        .text {
+
+            p {
+                font-size: 1.25rem;
+            }
+        } 
+    }
+
+    .row {
+        @include media-breakpoint-up(lg) {
+            font-size: 1.1rem;
+        } 
+
+        .phone {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+
+            p {
+                margin-bottom: 0.25rem;
+            }
+        }
+    
+        .mail {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+            
+            a {
+                color: $black;
+                padding-bottom: 0.5rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                padding-left: 1rem;
+            } 
+        }
+
+        .insta {
+
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+
+            i {
+                font-size: 1.5rem;
+            }
+
+            span {
+                font-size: 1.1rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                padding-left: 2rem;
+            } 
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 0;
+
+                span {
+                    font-size: 1.25rem;
+                }
+            } 
+        }
+    
+        i {
+            font-size: 1.35rem;
+            margin-right: 0.5rem;
+            padding-top: 0.25rem;
+        }
+    }
+
+}

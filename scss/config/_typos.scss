@@ -1,0 +1,12 @@
+@use '../customs' as *;
+
+.display-6 {
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.6rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.8rem;
+    }
+}

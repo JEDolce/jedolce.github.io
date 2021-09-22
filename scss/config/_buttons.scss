@@ -1,0 +1,57 @@
+@use '../customs' as *;
+
+.btn {
+    background-color: $beige;
+    border: none;
+    width: 12rem;
+    height: 3rem;
+
+    a {
+        color: $white;
+        font-weight: 500;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 15rem;
+    } 
+    
+    &:hover {
+        background-color: $white;
+        transition: 0.35s ease-in-out;  
+        border: 1.5px solid $beige;  
+
+        a {
+            color: $beige;
+        }
+    }
+
+    &--white {
+        background-color: $white;
+        border: 2px solid $ligth-green;
+        width: 10rem;
+        height: 3rem;
+
+        a {
+            color: $ligth-green;
+            font-weight: 600;
+        }
+    
+        @include media-breakpoint-up(md) {
+            width: 12rem;
+        } 
+    
+        @include media-breakpoint-up(lg) {
+            width: 15rem;
+        }
+
+        &:hover {
+            background-color: $ligth-green;
+            transition: 0.35s ease-in-out;  
+            border: 1px solid $white;  
+    
+            a {
+                color: $white;
+            }
+        }
+    }
+}
