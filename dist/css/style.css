@@ -11272,6 +11272,9 @@ textarea.form-control-lg {
   0% {
     opacity: 0;
   }
+  25% {
+    opacity: 1;
+  }
   33% {
     transform: translateY(2.28rem);
     opacity: 1;
@@ -11285,31 +11288,6 @@ textarea.form-control-lg {
     opacity: 0;
   }
 }
-/*
-@keyframes move-chevron {
-    0% {        
-        opacity: 0;         
-    }
-
-    25% {        
-        opacity: 1;         
-    }
-
-    33% {
-        opacity: 1;
-        transform: translateY($base * 3.8);
-    }
-
-    66% {
-        opacity: 1;
-        transform: translateY($base * 5.2);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY($base * 8) scale(0.5);
-    }
-}*/
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -11456,16 +11434,14 @@ textarea.form-control-lg {
   transform: scale(0.3);
   -webkit-animation: move-chevron 3s ease-out infinite;
   animation: move-chevron 3s ease-out infinite;
-  /*
-  &:first-child {
-      -webkit-animation: move-chevron 3s ease-out 1s infinite;
-      animation: move-chevron 3s ease-out 1s infinite;
-  }
-
-  &:nth-child(2) {
-      -webkit-animation: move-chevron 3s ease-out 2s infinite;
-      animation: move-chevron 3s ease-out 2s infinite;
-  }*/
+}
+.port-section .arrow .chevron:first-child {
+  -webkit-animation: move-chevron 3s ease-out 1s infinite;
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+.port-section .arrow .chevron:nth-child(2) {
+  -webkit-animation: move-chevron 3s ease-out 2s infinite;
+  animation: move-chevron 3s ease-out 2s infinite;
 }
 .port-section .arrow .chevron:before {
   content: "";
