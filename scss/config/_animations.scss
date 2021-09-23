@@ -6,50 +6,28 @@
         opacity: 0;         
     }
 
+    25% {
+        opacity: 1;
+    }
+
     33% {
-        -webkit-transform: -webkit-translateY($base * 3.8);
+        -webkit-transform: translateY($base * 3.8);
         transform: translateY($base * 3.8);
         opacity: 1;
     }
 
     66% {
-        -webkit-transform: -webkit-translateY($base * 5.2);
+        -webkit-transform: translateY($base * 5.2);
         transform: translateY($base * 5.2);
         opacity: 1;
     }
 
     100% {
-        -webkit-transform: -webkit-translateY($base * 8) scale(0.5);
+        -webkit-transform: translateY($base * 8) scale(0.5);
         transform: translateY($base * 8) scale(0.5);
         opacity: 0;
     }
 }
-/*
-@keyframes move-chevron {
-    0% {        
-        opacity: 0;         
-    }
-
-    25% {        
-        opacity: 1;         
-    }
-
-    33% {
-        opacity: 1;
-        transform: translateY($base * 3.8);
-    }
-
-    66% {
-        opacity: 1;
-        transform: translateY($base * 5.2);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY($base * 8) scale(0.5);
-    }
-}*/
-
 
 // Fade
 @keyframes fade-in {
