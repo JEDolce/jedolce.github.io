@@ -1,24 +1,6 @@
 @use '../customs' as *;
 
 // Arrow Down
-@keyframes move-chevron {
-    25% {
-     opacity: 1;
-       }
-    33% {
-     opacity: 1;
-     transform: translateY($base * 3.8);
-    }
-    66% {
-     opacity: 1;
-     transform: translateY($base * 5.2);
-    }
-    100% {
-     opacity: 0;
-     transform: translateY($base * 8) scale(0.5);
-    }
-}
-
 @-webkit-keyframes move-chevron {
     25% {
         opacity: 1;
@@ -35,6 +17,27 @@
         opacity: 0;
         -webkit-transform: translateY($base * 8) scale(0.5);
        }
+}
+
+@keyframes move-chevron {
+    25% {
+     opacity: 1;
+       }
+    33% {
+     opacity: 1;
+     transform: translateY($base * 3.8);
+     -webkit-transform: translateY($base * 3.8);
+    }
+    66% {
+     opacity: 1;
+     transform: translateY($base * 5.2);
+     -webkit-transform: translateY($base * 5.2);
+    }
+    100% {
+     opacity: 0;
+     transform: translateY($base * 8) scale(0.5);
+     -webkit-transform: translateY($base * 8) scale(0.5);
+    }
 }
 
 
