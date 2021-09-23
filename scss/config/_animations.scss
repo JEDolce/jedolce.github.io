@@ -7,18 +7,21 @@
     }
 
     33% {
-        opacity: 1;
         -webkit-transform: translateY($base * 3.8);
+        transform: translateY($base * 3.8);
+        opacity: 1;
     }
 
     66% {
-        opacity: 1;
         -webkit-transform: translateY($base * 5.2);
+        transform: translateY($base * 5.2);
+        opacity: 1;
     }
 
     100% {
-        opacity: 0;
         -webkit-transform: translateY($base * 8) scale(0.5);
+        transform: translateY($base * 8) scale(0.5);
+        opacity: 0;
     }
 }
 /*
