@@ -11272,9 +11272,6 @@ textarea.form-control-lg {
   0% {
     opacity: 0;
   }
-  25% {
-    opacity: 1;
-  }
   33% {
     opacity: 1;
     -webkit-transform: translateY(2.28rem);
@@ -11285,30 +11282,34 @@ textarea.form-control-lg {
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(4.8rem);
-    -webkit-transform: scale(0.5);
+    -webkit-transform: translateY(4.8rem) scale(0.5);
   }
 }
+/*
 @keyframes move-chevron {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 1;
-    transform: translateY(2.28rem);
-  }
-  66% {
-    opacity: 1;
-    transform: translateY(3.12rem);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(4.8rem) scale(0.5);
-  }
-}
+    0% {        
+        opacity: 0;         
+    }
+
+    25% {        
+        opacity: 1;         
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY($base * 3.8);
+    }
+
+    66% {
+        opacity: 1;
+        transform: translateY($base * 5.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY($base * 8) scale(0.5);
+    }
+}*/
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
