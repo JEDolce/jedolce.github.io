@@ -1,0 +1,50 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.contact {
+    padding-top: 2rem;
+    background-color: rgba(123, 143, 161, 0.2);
+    padding-bottom: 1rem;
+
+    .contact-info {
+        margin-top: 2rem;
+
+        ul {
+            margin-top: 1rem;
+            margin-left: 1rem;
+
+            li {
+                margin-top: 1rem;
+
+                i {
+                    height: 16px;
+                    width: 16px;
+                    color: $color-1;
+
+                    a {
+                        text-decoration: none;
+                        margin-left: 1rem;
+                        color: $gray-700;
+                    }
+                }
+            }
+        }
+    }
+
+    .icons-container {
+        display: flex;
+        justify-content: center;
+
+        .media-icon {
+            margin: 1rem;
+
+            a {
+
+                i {
+                    font-size: 2rem;
+                    color: $color-1;
+                }
+            }
+        }
+    }
+}

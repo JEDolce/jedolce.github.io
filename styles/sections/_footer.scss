@@ -1,0 +1,21 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+footer {
+    background-color: $black;
+
+    .copy {
+        color: $gray-300;
+        font-weight: 400;
+
+        a {
+            color: $gray-300;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-1;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@use 'custom' as *;
+
+// IMPORT COMPONENTS
+@use 'components/buttons';
+@use 'components/mixins';
+
+// IMPORT SECTIONS
+@use 'sections/intro';
+@use 'sections/about';
+@use 'sections/projects';
+@use 'sections/contact';
+@use 'sections/footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.title {
+    margin-bottom: 2rem;
+
+    h1 {
+        color: $color-1;
+    }
+
+    .heading-line {
+        width: 40px;
+        height: 4px;
+        background-color: $color-1;
+    }
+}
