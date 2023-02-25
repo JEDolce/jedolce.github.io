@@ -6,8 +6,10 @@
 
 // IMPORT SECTIONS
 @use 'sections/intro';
+@use 'sections/services';
 @use 'sections/about';
 @use 'sections/projects';
+@use 'sections/tech';
 @use 'sections/contact';
 @use 'sections/footer';
 
@@ -28,12 +30,6 @@ section {
     margin-bottom: 2rem;
 
     h1 {
-        color: $color-1;
-    }
-
-    .heading-line {
-        width: 40px;
-        height: 4px;
-        background-color: $color-1;
+        color: $black;
     }
 }

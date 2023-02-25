@@ -2,9 +2,8 @@
 @use '../components/mixins' as *;
 
 .intro {
-    background-color: $color-1;
-    color: $gray-200;
     min-height: 100vh;
+    position: relative;
 
     .navbar {
         padding: 1rem 0.5rem;
@@ -14,7 +13,6 @@
             li {
 
                 a {
-                    color: $white;
                     font-weight: 400;
                 }
             }
@@ -24,11 +22,12 @@
     .logo {
         position: absolute;
         top: 1rem;
-        right: 2rem;
+        right: 4rem;
     }
 
 
     .hero {
+        @include absoluteCenter;
 
         p {
             font-weight: 400;
@@ -36,17 +35,11 @@
 
         &--left {
             padding: 1rem;
-
-            h1 {
-                color: $color-3;
-            }
-
-            h5 {
-                color: $gray-400;
-            }
         }
 
         &--right {
+            display: flex;
+            flex-direction: column;
 
             .image {
                 display: flex;
@@ -54,10 +47,39 @@
                 justify-content: center;
 
                 img {
-                    height: 40vh;
+                    height: 50vh;
                     border-radius: 50%;
                 }
             }
+
+            &--icons {
+                padding-top: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 30%;
+
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: $black;
+
+                    i {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &--svg {
+        position: absolute;
+        bottom: -25%;
+        height: 60vh;
+        width: 40vw;
+
+        img {
+            opacity: 0.5;
         }
     }
 }

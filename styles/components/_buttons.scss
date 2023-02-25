@@ -2,15 +2,15 @@
 @use '../components/mixins' as *;
 
 .button {
-    color: $color-3;
+    // color: $color-3;
     border-radius: 0;
-    border: 2px solid $color-3;
+    border: 2px solid;
     background-color: transparent;
     margin: 1rem 0;
 
     a {
         text-decoration: none;
-        color: $color-3;
+        color: $black;
         font-weight: 500;
     }
 }

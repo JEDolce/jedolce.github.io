@@ -1,1 +1,45 @@
 @use '../custom' as *;
+
+// Gradient Mixin
+@mixin gradient {
+    background: linear-gradient(to right, rgba($color-1, 0.9), rgba($color-2, 0.9));
+}
+
+@mixin gradientInverted {
+    background: linear-gradient(to left, rgba($color-1, 0.9), rgba($color-2, 0.9));
+}
+
+// Absolute Center Mixin
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Flex center
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Transition
+@mixin transitionProp {
+    transition-property: all;
+    transition-duration: 1000ms;
+}
+
+// Hover Btn
+@mixin hoverBtn {
+    opacity: 0.75;
+    transition: all 0.5s ease-in-out;
+}
+
+// Circle Btn
+@mixin circleBtn {
+    position: fixed;
+    width: 2.8rem;
+    height: 2.8rem;
+    z-index: 9999;
+}

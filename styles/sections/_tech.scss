@@ -1,0 +1,6 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.tech {
+    min-height: 20vh;
+}
