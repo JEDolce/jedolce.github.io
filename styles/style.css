@@ -10821,25 +10821,13 @@ textarea.form-control-lg {
   min-height: 100vh;
   position: relative;
 }
-.intro .navbar {
-  padding: 1rem 0.5rem;
-}
-.intro .navbar ul li a {
-  font-weight: 400;
-}
 .intro .logo {
   position: absolute;
   top: 1rem;
-  right: 4rem;
+  right: 2rem;
 }
 .intro .hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.intro .hero p {
-  font-weight: 400;
+  padding-top: 1.5rem;
 }
 .intro .hero--left {
   padding: 1rem;
@@ -10848,21 +10836,15 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
 }
-.intro .hero--right .image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .intro .hero--right .image img {
-  height: 50vh;
   border-radius: 50%;
 }
 .intro .hero--right--icons {
-  padding-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
+  padding-top: 4rem;
+  width: 50%;
 }
 .intro .hero--right--icons a {
   cursor: pointer;
@@ -10882,6 +10864,61 @@ textarea.form-control-lg {
   opacity: 0.5;
 }
 
+@media (min-width: 768px) {
+  .intro {
+    padding-bottom: 0;
+  }
+  .intro .navbar {
+    padding: 1rem 0.5rem;
+  }
+  .intro .hero--right {
+    flex-direction: row;
+    padding-top: 3rem;
+  }
+  .intro .hero--right--icons {
+    flex-direction: column;
+    padding-top: 0rem;
+    margin: 6rem 0;
+  }
+}
+@media (min-width: 992px) {
+  .intro {
+    padding-bottom: 5rem;
+  }
+  .intro .logo {
+    right: 4rem;
+  }
+  .intro .hero {
+    flex-direction: row;
+    margin-top: 10vh;
+  }
+  .intro .hero--right {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .intro .hero--right .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro .hero--right .image img {
+    height: 50vh;
+    border-radius: 50%;
+  }
+  .intro .hero--right--icons {
+    flex-direction: row;
+    width: 30%;
+    margin: 4rem 0;
+  }
+  .intro .hero--right--icons a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+  }
+  .intro .hero--right--icons a i {
+    font-size: 2rem;
+  }
+}
 .services {
   min-height: 50vh;
   display: flex;
