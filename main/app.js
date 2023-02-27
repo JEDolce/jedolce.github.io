@@ -56,3 +56,4 @@ const introElem = document.querySelector('.intros');
 navbarBtn.addEventListener('click', () => {
     introElem.classList.toggle('paddingStyle')
 });
+

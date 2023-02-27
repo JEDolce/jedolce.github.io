@@ -2,26 +2,23 @@
 @use '../components/mixins' as *;
 
 .projects {
-    position: relative;
 
     .title {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
 
-        .heading-line {
-            width: 40px;
-            height: 4px;
-            background-color: $black;
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
         }
     }
 
     .card {
-        width: 15rem;
-        cursor: pointer;
         position: relative;
+        margin: 1rem 2.5rem;
+        cursor: pointer;
 
         img {
-            width: 15rem;
-            height: 15rem;
             border-radius: 10%;
         }
 
@@ -38,6 +35,46 @@
             h2 {
                 color: $white;
                 @include absoluteCenter;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+
+    .projects {
+
+        .title {
+            text-align: start;
+
+            .heading-line {
+                width: 40px;
+                height: 4px;
+                background-color: $black;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .projects {
+
+        .title {
+
+            .heading-line {
+                width: 40px;
+                height: 4px;
+                background-color: $black;
+            }
+        }
+
+        .card {
+            width: 15rem;
+
+            img {
+                width: 15rem;
+                height: 15rem;
             }
         }
     }

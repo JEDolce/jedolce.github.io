@@ -10955,25 +10955,20 @@ textarea.form-control-lg {
     align-items: center;
   }
 }
-.projects {
-  position: relative;
-}
 .projects .title {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
-.projects .title .heading-line {
-  width: 40px;
-  height: 4px;
-  background-color: #000;
+.projects .title h1 {
+  font-weight: 700;
+  font-size: 2rem;
 }
 .projects .card {
-  width: 15rem;
-  cursor: pointer;
   position: relative;
+  margin: 1rem 2.5rem;
+  cursor: pointer;
 }
 .projects .card img {
-  width: 15rem;
-  height: 15rem;
   border-radius: 10%;
 }
 .projects .card .number {
@@ -10994,6 +10989,30 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
 }
 
+@media (min-width: 768px) {
+  .projects .title {
+    text-align: start;
+  }
+  .projects .title .heading-line {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+  }
+}
+@media (min-width: 992px) {
+  .projects .title .heading-line {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+  }
+  .projects .card {
+    width: 15rem;
+  }
+  .projects .card img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
 .tech {
   min-height: 20vh;
 }
