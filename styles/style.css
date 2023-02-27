@@ -11018,9 +11018,16 @@ textarea.form-control-lg {
 }
 
 .contact {
-  padding-top: 2rem;
+  padding: 2rem 0 1rem 0;
   background-color: rgba(123, 143, 161, 0.2);
-  padding-bottom: 1rem;
+}
+.contact .title {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.contact .title h1 {
+  font-weight: 700;
+  font-size: 2rem;
 }
 .contact .contact-info {
   margin-top: 2rem;
@@ -11053,6 +11060,35 @@ textarea.form-control-lg {
   color: #000;
 }
 
+@media (min-width: 768px) {
+  .contact .title {
+    text-align: start;
+  }
+  .contact .title .heading-line {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+  }
+  .contact .contact-info {
+    padding-right: 0;
+  }
+  .contact .contact-info ul li {
+    display: flex;
+  }
+  .contact .contact-info ul li i {
+    margin-top: 0.25rem;
+  }
+  .contact .icons-container {
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .contact .icons-container {
+    align-items: flex-end;
+  }
+}
 footer {
   background-color: #000;
 }

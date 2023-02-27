@@ -2,9 +2,18 @@
 @use '../components/mixins' as *;
 
 .contact {
-    padding-top: 2rem;
+    padding: 2rem 0 1rem 0;
     background-color: rgba(123, 143, 161, 0.2);
-    padding-bottom: 1rem;
+
+    .title {
+        margin-bottom: 3rem;
+        text-align: center;
+
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+    }
 
     .contact-info {
         margin-top: 2rem;
@@ -44,6 +53,54 @@
                     color: $black;
                 }
             }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+
+    .contact {
+
+        .title {
+            text-align: start;
+
+            .heading-line {
+                width: 40px;
+                height: 4px;
+                background-color: $black;
+            }
+        }
+
+        .contact-info {
+            padding-right: 0;
+
+            ul {
+
+                li {
+                    display: flex;
+
+
+                    i {
+                        margin-top: 0.25rem;
+                    }
+                }
+            }
+        }
+
+        .icons-container {
+            margin-top: 3rem;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .contact {
+
+        .icons-container {
+            align-items: flex-end;
         }
     }
 }
