@@ -21,18 +21,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
     font-weight: 300;
+}
+
+body {
+    p {
+        font-size: 1.1rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        p {
+            font-size: 1.25rem;
+        }
+    }
 }
 
 section {
     padding-bottom: 5rem;
-}
-
-.title {
-    margin-bottom: 2rem;
-
-    h1 {
-        color: $black;
-    }
 }

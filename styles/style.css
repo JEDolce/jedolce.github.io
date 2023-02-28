@@ -10824,14 +10824,29 @@ textarea.form-control-lg {
 }
 .intro .logo {
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
   right: 2rem;
+}
+.intro .logo h2 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 .intro .hero {
   padding-top: 1.5rem;
 }
 .intro .hero--left {
   padding: 1rem;
+}
+.intro .hero--left h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.intro .hero--left h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.intro .hero--left button {
+  display: none;
 }
 .intro .hero--right {
   display: flex;
@@ -10881,12 +10896,22 @@ textarea.form-control-lg {
     padding-top: 0rem;
     margin: 6rem 0;
   }
+  .intro .hero--right--icons a i {
+    font-size: 2.15rem;
+  }
 }
 @media (min-width: 992px) {
   .intro {
     padding-bottom: 5rem;
   }
+  .intro .navbar a {
+    font-size: 1.2rem;
+  }
+  .intro .navbar li:nth-child(n+2) {
+    margin-left: 1rem;
+  }
   .intro .logo {
+    top: 1rem;
     right: 4rem;
   }
   .intro .hero {
@@ -10908,7 +10933,7 @@ textarea.form-control-lg {
   }
   .intro .hero--right--icons {
     flex-direction: row;
-    width: 30%;
+    width: 40%;
     margin: 4rem 0;
   }
   .intro .hero--right--icons a {
@@ -10917,7 +10942,15 @@ textarea.form-control-lg {
     color: #000;
   }
   .intro .hero--right--icons a i {
-    font-size: 2rem;
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .intro .navbar a {
+    font-size: 1.25rem;
+  }
+  .intro .hero--right--icons a i {
+    font-size: 2.45rem;
   }
 }
 .services {
@@ -10956,7 +10989,7 @@ textarea.form-control-lg {
   }
 }
 .projects .title {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .projects .title h1 {
@@ -11021,6 +11054,9 @@ textarea.form-control-lg {
   padding: 2rem 0 1rem 0;
   background-color: rgba(123, 143, 161, 0.2);
 }
+.contact label {
+  font-size: 1.1rem;
+}
 .contact .title {
   margin-bottom: 3rem;
   text-align: center;
@@ -11047,10 +11083,12 @@ textarea.form-control-lg {
   text-decoration: none;
   margin-left: 1rem;
   color: #495057;
+  font-size: 1.1rem;
 }
 .contact .icons-container {
   display: flex;
   justify-content: center;
+  margin: 2rem auto;
 }
 .contact .icons-container .media-icon {
   margin: 1rem;
@@ -11061,6 +11099,9 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 768px) {
+  .contact label {
+    font-size: 1.2rem;
+  }
   .contact .title {
     text-align: start;
   }
@@ -11077,16 +11118,39 @@ textarea.form-control-lg {
   }
   .contact .contact-info ul li i {
     margin-top: 0.25rem;
+    font-size: 1.2rem;
+  }
+  .contact .contact-info ul li a {
+    font-size: 1.2rem;
   }
   .contact .icons-container {
     margin-top: 3rem;
     flex-direction: column;
     align-items: center;
   }
+  .contact .icons-container .media-icon a i {
+    font-size: 2.15rem;
+  }
 }
 @media (min-width: 992px) {
+  .contact .contact-info ul li i {
+    font-size: 1.25rem;
+  }
+  .contact .contact-info ul li a {
+    font-size: 1.25rem;
+    margin-left: 1.5rem;
+  }
   .contact .icons-container {
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact .icons-container .media-icon a i {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contact .icons-container .media-icon a i {
+    font-size: 2.45rem;
   }
 }
 footer {
@@ -11095,10 +11159,16 @@ footer {
 footer .copy {
   color: #dee2e6;
   font-weight: 400;
+  font-size: 1rem;
+}
+footer .copy span {
+  font-size: 1rem;
 }
 footer .copy a {
   color: #dee2e6;
   text-decoration: none;
+  font-size: 1rem;
+  margin-left: 1rem;
 }
 footer .copy a:hover {
   color: #567189;
@@ -11110,17 +11180,23 @@ footer .copy a:hover {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
   font-weight: 300;
+}
+
+body p {
+  font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+  body p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  body p {
+    font-size: 1.25rem;
+  }
 }
 
 section {
   padding-bottom: 5rem;
-}
-
-.title {
-  margin-bottom: 2rem;
-}
-.title h1 {
-  color: #000;
 }/*# sourceMappingURL=style.css.map */

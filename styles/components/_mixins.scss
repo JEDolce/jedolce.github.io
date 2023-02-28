@@ -1,6 +1,6 @@
 @use '../custom' as *;
 
-// Gradient Mixin
+// Gradient
 @mixin gradient {
     background: linear-gradient(to right, rgba($color-1, 0.9), rgba($color-2, 0.9));
 }
@@ -9,7 +9,8 @@
     background: linear-gradient(to left, rgba($color-1, 0.9), rgba($color-2, 0.9));
 }
 
-// Absolute Center Mixin
+
+// Positioning
 @mixin absoluteCenter {
     position: absolute;
     top: 50%;
@@ -17,12 +18,12 @@
     transform: translate(-50%, -50%);
 }
 
-// Flex center
 @mixin flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 // Transition
 @mixin transitionProp {
@@ -30,16 +31,28 @@
     transition-duration: 1000ms;
 }
 
-// Hover Btn
+
+// Buttons
 @mixin hoverBtn {
     opacity: 0.75;
     transition: all 0.5s ease-in-out;
 }
 
-// Circle Btn
 @mixin circleBtn {
     position: fixed;
     width: 2.8rem;
     height: 2.8rem;
     z-index: 9999;
+}
+
+
+// Typography
+@mixin titleSm {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@mixin subtitleSm {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
