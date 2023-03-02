@@ -11046,10 +11046,19 @@ textarea.form-control-lg {
     height: 15rem;
   }
 }
-.tech {
-  min-height: 20vh;
+.tech .carousel .image-container img {
+  height: 3rem;
 }
 
+@media (min-width: 992px) {
+  .tech {
+    height: 40vh;
+    padding: 4rem 0;
+  }
+  .tech .carousel .image-container img {
+    height: 5rem;
+  }
+}
 .contact {
   padding: 2rem 0 1rem 0;
   background-color: rgba(123, 143, 161, 0.2);

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <title>Portfolio</title>
 </head>
 
@@ -118,7 +119,14 @@
 
   <!-- TECH SECTION -->
   <section id="tech" class="tech">
-    <!-- Multi item carousel -->
+    <div class="carousel">
+      <div class="image-container"><img src="./assets/logos/docker-logo.png"></div>
+      <div class="image-container"><img src="./assets/logos/mongo-logo.png"></div>
+      <div class="image-container"><img src="./assets/logos/mysql-logo.png"></div>
+      <div class="image-container"><img src="./assets/logos/postgres-logo.png"></div>
+      <div class="image-container"><img src="./assets/logos/react-logo.png"></div>
+      <div class="image-container"><img src="./assets/logos/node-logo.png"></div>
+    </div>
   </section>
 
   <!-- PROJECTS SECTION -->
@@ -284,6 +292,10 @@
   <script type="text/javascript">
     emailjs.init('1pY1SreRFa_h2-w6Q')
   </script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./main/slickSlider.js"></script>
 </body>
 
 </html>

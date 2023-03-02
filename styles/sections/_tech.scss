@@ -2,5 +2,36 @@
 @use '../components/mixins' as *;
 
 .tech {
-    min-height: 20vh;
+
+    .carousel {
+
+        .image-container {
+
+            img {
+                height: 3rem;
+            }
+        }
+    }
 }
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {
+
+    .tech {
+        height: 40vh;
+        padding: 4rem 0;
+
+        .carousel {
+
+            .image-container {
+
+                img {
+                    height: 5rem;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {}
