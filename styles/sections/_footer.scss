@@ -7,21 +7,34 @@ footer {
     .copy {
         color: $gray-300;
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 0.8rem;
 
         span {
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
 
         a {
             color: $gray-300;
             text-decoration: none;
-            font-size: 1rem;
-            margin-left: 1rem;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+    }
+}
 
-            &:hover {
-                color: $color-1;
-                text-decoration: underline;
+@include media-breakpoint-up(md) {
+
+    footer {
+
+        .copy {
+            font-size: 1rem;
+
+            span {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 1rem;
             }
         }
     }

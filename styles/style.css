@@ -11159,22 +11159,29 @@ footer {
 footer .copy {
   color: #dee2e6;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 footer .copy span {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 footer .copy a {
   color: #dee2e6;
   text-decoration: none;
-  font-size: 1rem;
-  margin-left: 1rem;
-}
-footer .copy a:hover {
-  color: #567189;
-  text-decoration: underline;
+  font-size: 0.8rem;
+  margin: 0;
 }
 
+@media (min-width: 768px) {
+  footer .copy {
+    font-size: 1rem;
+  }
+  footer .copy span {
+    font-size: 1rem;
+  }
+  footer .copy a {
+    font-size: 1rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
