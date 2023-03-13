@@ -118,6 +118,26 @@
 
             a {
                 font-size: 1.2rem;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    display: block;
+                    width: 75%;
+                    height: 2px;
+                    background-color: #000;
+                    transform: scaleX(0);
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover::before {
+                    transform: scaleX(1);
+                }
             }
 
             li:nth-child(n+2) {
@@ -128,6 +148,10 @@
         .logo {
             top: 1rem;
             right: 4rem;
+
+            h2 {
+                color: white;
+            }
         }
 
         .hero {
@@ -158,11 +182,28 @@
                         cursor: pointer;
                         text-decoration: none;
                         color: $black;
+                        transition: all ease-in-out 0.25s;
+
+                        &:hover {
+                            transform: scale(1.3);
+                            transition: all ease-in-out 0.25s;
+                        }
 
                         i {
                             font-size: 2.3rem;
                         }
                     }
+                }
+
+                &--overlay {
+                    height: 600px;
+                    width: 700px;
+                    background-color: black;
+                    position: absolute;
+                    z-index: -1;
+                    border-radius: 67% 33% 62% 38% / 60% 0% 100% 40%;
+                    top: 0;
+                    right: 0;
                 }
             }
         }
