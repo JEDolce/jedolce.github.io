@@ -29,12 +29,21 @@
     }
 }
 
-
+/* CONTACT FORM BUTTON */
 .btn-input {
-    padding: 0.5rem 2rem;
+    padding: 0.75rem 2rem;
     font-weight: 500;
+    transition: ease-in 0.4s;
+    border: 2px solid $black;
+
+    &:hover {
+        background-color: rgba(123, 143, 161, 0.4);
+        transform: scale(1.1);
+        transition: ease-in 0.2s;
+    }
 }
 
+/* BACK TO TOP BUTTON */
 .back-to-top {
     position: fixed;
     width: 3rem;

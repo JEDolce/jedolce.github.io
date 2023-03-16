@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
+@use '../components/animations' as *;
 
 .contact {
     padding: 2rem 0 1rem 0;
@@ -145,8 +146,14 @@
         .icons-container {
             flex-direction: row;
             align-items: center;
+            justify-content: space-between;
+            width: 60%;
 
             .media-icon {
+
+                &:hover {
+                    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+                }
 
                 a {
 

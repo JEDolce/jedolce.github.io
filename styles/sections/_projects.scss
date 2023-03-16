@@ -64,6 +64,12 @@
     .projects {
 
         .title {
+            transform: translateX(-20vw);
+
+            &.showTitle {
+                transform: translateX(0);
+                transition: ease-in all 0.75s;
+            }
 
             .heading-line {
                 width: 40px;

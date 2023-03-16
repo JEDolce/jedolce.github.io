@@ -43,4 +43,15 @@
         display: flex;
         align-items: center;
     }
+
+    .tag {
+        opacity: 0;
+        transform: translate(0, 10vh);
+        transition: all 1.75s;
+    }
+
+    .tag.visible {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
