@@ -42,6 +42,16 @@
     .services {
         display: flex;
         align-items: center;
+
+        // &--svg {
+        //     position: absolute;
+        //     bottom: -25%;
+        //     width: 100%;
+
+        //     img {
+        //         opacity: 0.5;
+        //     }
+        // }
     }
 
     .tag {

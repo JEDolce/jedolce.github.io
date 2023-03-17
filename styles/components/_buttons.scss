@@ -2,7 +2,6 @@
 @use '../components/mixins' as *;
 
 .button {
-    // color: $color-3;
     border-radius: 0;
     border: 2px solid;
     background-color: transparent;
@@ -30,16 +29,27 @@
 }
 
 /* CONTACT FORM BUTTON */
+.draw-border {
+    @include btn-border-drawing(#55d7dc, #ffe593, 4px, bottom, right);
+    border: none;
+}
+
 .btn-input {
-    padding: 0.75rem 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
     font-weight: 500;
-    transition: ease-in 0.4s;
-    border: 2px solid $black;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+    margin: 0;
+
+    &:focus {
+        outline: 2px dotted #55d7dc;
+    }
 
     &:hover {
-        background-color: rgba(123, 143, 161, 0.4);
-        transform: scale(1.1);
-        transition: ease-in 0.2s;
+        color: #ffe593;
     }
 }
 

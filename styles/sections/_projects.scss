@@ -31,7 +31,7 @@
                 bottom: -5%;
                 right: -5%;
                 background-color: gray;
-                border-radius: 10%;
+                border-radius: 0% 100% 0% 100% / 76% 27% 73% 24%;
                 z-index: 100;
 
                 h2 {
@@ -81,9 +81,13 @@
         .card {
             width: 15rem;
 
-            img {
-                width: 15rem;
-                height: 15rem;
+            .hub-img {
+                @include flexCenter;
+
+                .size {
+                    width: 8rem;
+                    height: 10rem;
+                }
             }
         }
     }
