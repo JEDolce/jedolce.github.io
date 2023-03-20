@@ -10896,6 +10896,10 @@ textarea.form-control-lg {
   min-height: 100vh;
   position: relative;
 }
+.intro .navbar a {
+  font-weight: 500;
+  color: #344f66;
+}
 .intro .logo {
   position: absolute;
   top: 0.5rem;
@@ -10904,6 +10908,7 @@ textarea.form-control-lg {
 .intro .logo h2 {
   font-size: 2rem;
   font-weight: 700;
+  color: #FAD6A5;
 }
 .intro .hero {
   padding-top: 1.5rem;
@@ -10911,9 +10916,24 @@ textarea.form-control-lg {
 .intro .hero--left {
   padding: 1rem;
 }
-.intro .hero--left h1 {
+.intro .hero--left--title {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.intro .hero--left--title h1 {
   font-size: 2rem;
   font-weight: 700;
+  color: #567189;
+  background-color: #FAD6A5;
+  padding-right: 1rem;
+}
+.intro .hero--left--title--name {
+  clip-path: polygon(100% 0, 95% 21%, 100% 28%, 96% 39%, 100% 48%, 100% 74%, 96% 93%, 100% 100%, 0 100%, 0 0);
+}
+.intro .hero--left--title--lastname {
+  clip-path: polygon(100% 0, 100% 13%, 95% 26%, 100% 41%, 98% 58%, 100% 76%, 98% 89%, 100% 100%, 0 100%, 0 0);
 }
 .intro .hero--left h5 {
   font-size: 1.5rem;
@@ -10939,10 +10959,20 @@ textarea.form-control-lg {
 .intro .hero--right--icons a {
   cursor: pointer;
   text-decoration: none;
-  color: #000;
+  color: #344f66;
 }
 .intro .hero--right--icons a i {
   font-size: 2rem;
+}
+.intro .hero--right--circle {
+  height: 450px;
+  width: 570px;
+  background-color: #567189;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: -20rem;
+  right: -20rem;
 }
 
 @media (min-width: 768px) {
@@ -10972,6 +11002,7 @@ textarea.form-control-lg {
   }
   .intro .navbar a {
     font-size: 1.2rem;
+    font-weight: 500;
     position: relative;
   }
   .intro .navbar a::before {
@@ -10984,7 +11015,7 @@ textarea.form-control-lg {
     display: block;
     width: 75%;
     height: 2px;
-    background-color: #000;
+    background-color: #FAD6A5;
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -10998,12 +11029,17 @@ textarea.form-control-lg {
     top: 1rem;
     right: 4rem;
   }
-  .intro .logo h2 {
-    color: white;
-  }
   .intro .hero {
     flex-direction: row;
     margin-top: 10vh;
+  }
+  .intro .hero--left--line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/assets/bg/ttten-fade-right-1.svg");
+    height: 100%;
+    width: 10rem;
   }
   .intro .hero--right {
     flex-direction: column;
@@ -11026,7 +11062,6 @@ textarea.form-control-lg {
   .intro .hero--right--icons a {
     cursor: pointer;
     text-decoration: none;
-    color: #000;
     transition: all ease-in-out 0.25s;
   }
   .intro .hero--right--icons a:hover {
@@ -11038,7 +11073,7 @@ textarea.form-control-lg {
   .intro .hero--right--circle {
     height: 600px;
     width: 600px;
-    background-color: black;
+    background-color: #567189;
     position: absolute;
     z-index: -1;
     border-radius: 50%;
@@ -11056,14 +11091,30 @@ textarea.form-control-lg {
 }
 .services {
   min-height: 50vh;
+  position: relative;
 }
 .services--title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   margin-bottom: 1rem;
 }
 .services--title h1 {
   font-weight: 700;
   font-size: 2rem;
+  color: #567189;
+}
+.services--title--main {
+  background-color: #FAD6A5;
+  width: 50%;
+  clip-path: polygon(100% 0, 95% 11%, 100% 23%, 100% 41%, 92% 49%, 100% 60%, 95% 83%, 100% 100%, 0 100%, 0 0);
+}
+.services--title--services {
+  background-color: #FAD6A5;
+  width: 70%;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 85%, 4% 69%, 0 60%, 5% 39%, 0 21%, 4% 13%, 0 0);
 }
 .services--card {
   display: flex;
@@ -11072,6 +11123,7 @@ textarea.form-control-lg {
   margin-top: 2rem;
 }
 .services--card img {
+  height: 5rem;
   padding-bottom: 1rem;
 }
 .services--card h3 {
@@ -11088,6 +11140,22 @@ textarea.form-control-lg {
     display: flex;
     align-items: center;
   }
+  .services--line--left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("/assets/bg/ttten-fade-right-1.svg");
+    height: 100%;
+    width: 10rem;
+  }
+  .services--line--bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("/assets/bg/ttten-fade-top.svg");
+    height: 10rem;
+    width: 100%;
+  }
   .tag {
     opacity: 0;
     transform: translate(0, 10vh);
@@ -11100,11 +11168,17 @@ textarea.form-control-lg {
 }
 .projects .title {
   margin-bottom: 2rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .projects .title h1 {
   font-weight: 700;
   font-size: 2rem;
+  color: #567189;
+  background-color: #FAD6A5;
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 2% 84%, 0 72%, 3% 58%, 0 44%, 4% 36%, 0 19%, 4% 11%, 0 0);
 }
 .projects .card {
   margin: 1rem 2.5rem;
@@ -11120,14 +11194,14 @@ textarea.form-control-lg {
   height: 3rem;
   width: 3rem;
   position: absolute;
-  bottom: -5%;
+  bottom: -10%;
   right: -5%;
-  background-color: gray;
+  background-color: #567189;
   border-radius: 0% 100% 0% 100%/76% 27% 73% 24%;
   z-index: 100;
 }
 .projects .card .image-container .number h2 {
-  color: #fff;
+  color: #FAD6A5;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11138,24 +11212,25 @@ textarea.form-control-lg {
   .projects .title {
     text-align: start;
   }
-  .projects .title .heading-line {
-    width: 40px;
-    height: 4px;
-    background-color: #000;
-  }
 }
 @media (min-width: 992px) {
+  .projects {
+    position: relative;
+  }
+  .projects--line--right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("/assets/bg/ttten-fade-left.svg");
+    height: 100%;
+    width: 10rem;
+  }
   .projects .title {
     transform: translateX(-20vw);
   }
   .projects .title.showTitle {
     transform: translateX(0);
     transition: ease-in all 0.75s;
-  }
-  .projects .title .heading-line {
-    width: 40px;
-    height: 4px;
-    background-color: #000;
   }
   .projects .card {
     width: 15rem;
@@ -11169,6 +11244,14 @@ textarea.form-control-lg {
     width: 8rem;
     height: 10rem;
   }
+  .projects .card .waste-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects .card .waste-img .size {
+    height: 10rem;
+  }
 }
 .tech .carousel .image-container img {
   height: 3rem;
@@ -11178,6 +11261,15 @@ textarea.form-control-lg {
   .tech {
     height: 40vh;
     padding: 4rem 0;
+    position: relative;
+  }
+  .tech--line--right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("/assets/bg/ttten-fade-left.svg");
+    height: 100%;
+    width: 10rem;
   }
   .tech .carousel .image-container img {
     height: 5rem;
@@ -11328,6 +11420,9 @@ footer .copy a {
   font-weight: 300;
 }
 
+body {
+  color: #344f66;
+}
 body p {
   font-size: 1.1rem;
 }

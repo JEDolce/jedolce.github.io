@@ -6,6 +6,13 @@
     min-height: 100vh;
     position: relative;
 
+    .navbar {
+        a {
+            font-weight: 500;
+            color: $color-2;
+        }
+    }
+
     .logo {
         position: absolute;
         top: 0.5rem;
@@ -13,6 +20,7 @@
 
         h2 {
             @include titleSm;
+            color: $color-4;
         }
     }
 
@@ -22,8 +30,26 @@
         &--left {
             padding: 1rem;
 
-            h1 {
-                @include titleSm;
+            &--title {
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                h1 {
+                    @include titleSm;
+                    color: $color-1;
+                    background-color: $color-4;
+                    padding-right: 1rem;
+                }
+
+                &--name {
+                    clip-path: polygon(100% 0, 95% 21%, 100% 28%, 96% 39%, 100% 48%, 100% 74%, 96% 93%, 100% 100%, 0 100%, 0 0);
+                }
+
+                &--lastname {
+                    clip-path: polygon(100% 0, 100% 13%, 95% 26%, 100% 41%, 98% 58%, 100% 76%, 98% 89%, 100% 100%, 0 100%, 0 0);
+                }
             }
 
             h5 {
@@ -56,12 +82,23 @@
                 a {
                     cursor: pointer;
                     text-decoration: none;
-                    color: $black;
+                    color: $color-2;
 
                     i {
                         font-size: 2rem;
                     }
                 }
+            }
+
+            &--circle {
+                height: 450px;
+                width: 570px;
+                background-color: $color-1;
+                position: absolute;
+                z-index: -1;
+                border-radius: 50%;
+                top: -20rem;
+                right: -20rem;
             }
         }
     }
@@ -109,6 +146,7 @@
 
             a {
                 font-size: 1.2rem;
+                font-weight: 500;
                 position: relative;
 
                 &::before {
@@ -121,7 +159,7 @@
                     display: block;
                     width: 75%;
                     height: 2px;
-                    background-color: #000;
+                    background-color: $color-4;
                     transform: scaleX(0);
                     transition: transform 0.3s ease;
                 }
@@ -139,15 +177,20 @@
         .logo {
             top: 1rem;
             right: 4rem;
-
-            h2 {
-                color: white;
-            }
         }
 
         .hero {
             flex-direction: row;
             margin-top: 10vh;
+
+            &--left--line {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url('/assets/bg/ttten-fade-right-1.svg');
+                height: 100%;
+                width: 10rem;
+            }
 
             &--right {
                 flex-direction: column;
@@ -172,7 +215,6 @@
                     a {
                         cursor: pointer;
                         text-decoration: none;
-                        color: $black;
                         transition: all ease-in-out 0.25s;
 
                         &:hover {
@@ -188,7 +230,7 @@
                 &--circle {
                     height: 600px;
                     width: 600px;
-                    background-color: black;
+                    background-color: $color-1;
                     position: absolute;
                     z-index: -1;
                     border-radius: 50%;

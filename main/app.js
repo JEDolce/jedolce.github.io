@@ -50,12 +50,12 @@ scrollLinks.forEach((link) => {
 });
 
 // ********** Change Padding Intros ************
-const navbarBtn = document.querySelector('.navbar-toggler');
-const introElem = document.querySelector('.intros');
+// const navbarBtn = document.querySelector('.navbar-toggler');
+// const introElem = document.querySelector('.intros');
 
-navbarBtn.addEventListener('click', () => {
-    introElem.classList.toggle('paddingStyle')
-});
+// navbarBtn.addEventListener('click', () => {
+//     introElem.classList.toggle('paddingStyle')
+// });
 
 
 
