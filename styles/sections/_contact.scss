@@ -4,11 +4,7 @@
 
 .contact {
     padding: 2rem 0 1rem 0;
-    background-color: rgba(123, 143, 161, 0.2);
-
-    label {
-        font-size: 1.1rem;
-    }
+    background-color: $color-9;
 
     .title {
         margin-bottom: 3rem;
@@ -17,7 +13,16 @@
         h1 {
             font-weight: 700;
             font-size: 2rem;
+            color: $color-3;
         }
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    input {
+        color: $color-3;
     }
 
     .contact-info {
@@ -57,7 +62,7 @@
 
                 i {
                     font-size: 2rem;
-                    color: $black;
+                    color: $color-3;
                 }
             }
         }
@@ -78,7 +83,7 @@
             .heading-line {
                 width: 40px;
                 height: 4px;
-                background-color: $black;
+                background-color: $color-3;
             }
         }
 

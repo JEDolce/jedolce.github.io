@@ -30,7 +30,7 @@
 
 /* CONTACT FORM BUTTON */
 .draw-border {
-    @include btn-border-drawing(#55d7dc, #ffe593, 4px, bottom, right);
+    @include btn-border-drawing($color-3, $color-1, 4px, bottom, right);
     border: none;
 }
 
@@ -45,11 +45,11 @@
     margin: 0;
 
     &:focus {
-        outline: 2px dotted #55d7dc;
+        outline: 2px dotted $color-3;
     }
 
     &:hover {
-        color: #ffe593;
+        color: $color-1;
     }
 }
 
