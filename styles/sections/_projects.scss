@@ -19,7 +19,6 @@
 
     .card {
         margin: 1rem 2.5rem;
-        cursor: pointer;
 
         .image-container {
             position: relative;
@@ -37,10 +36,21 @@
                 background-color: $color-1;
                 border-radius: 0% 100% 0% 100% / 76% 27% 73% 24%;
                 z-index: 100;
+                cursor: pointer;
+                transition: all ease-in-out 0.5s;
 
                 h2 {
                     color: $color-4;
                     @include absoluteCenter;
+                }
+
+                &:hover {
+                    background-color: $color-4;
+                    transition: all ease-in-out 0.5s;
+
+                    h2 {
+                        color: $color-1;
+                    }
                 }
             }
         }

@@ -11090,7 +11090,7 @@ textarea.form-control-lg {
   }
 }
 .services {
-  min-height: 50vh;
+  min-height: 70vh;
   position: relative;
 }
 .services--title {
@@ -11182,7 +11182,6 @@ textarea.form-control-lg {
 }
 .projects .card {
   margin: 1rem 2.5rem;
-  cursor: pointer;
 }
 .projects .card .image-container {
   position: relative;
@@ -11199,6 +11198,8 @@ textarea.form-control-lg {
   background-color: #567189;
   border-radius: 0% 100% 0% 100%/76% 27% 73% 24%;
   z-index: 100;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
 }
 .projects .card .image-container .number h2 {
   color: #FAD6A5;
@@ -11206,6 +11207,13 @@ textarea.form-control-lg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.projects .card .image-container .number:hover {
+  background-color: #FAD6A5;
+  transition: all ease-in-out 0.5s;
+}
+.projects .card .image-container .number:hover h2 {
+  color: #567189;
 }
 
 @media (min-width: 768px) {
@@ -11293,6 +11301,7 @@ textarea.form-control-lg {
 }
 .contact input {
   color: #CFB997;
+  font-weight: 700;
 }
 .contact .contact-info {
   margin-top: 2rem;
