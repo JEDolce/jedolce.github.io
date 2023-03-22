@@ -234,7 +234,6 @@
                     position: absolute;
                     z-index: -1;
                     border-radius: 50%;
-                    // border-radius: 67% 33% 62% 38% / 60% 0% 100% 40%;
                     top: -20rem;
                     right: -20rem;
                 }
@@ -272,5 +271,28 @@
             }
         }
 
+    }
+}
+
+@media (min-width: 1600px) {
+    .intro {
+
+        .hero {
+
+            &--left {
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }

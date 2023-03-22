@@ -14,8 +14,6 @@
     }
 }
 
-@include media-breakpoint-up(md) {}
-
 @include media-breakpoint-up(lg) {
 
     .tech {
@@ -44,4 +42,12 @@
     }
 }
 
-@include media-breakpoint-up(xl) {}
+@media (min-width: 1600px) {
+
+    .tech {
+
+        .carousel {
+            padding-top: 2rem;
+        }
+    }
+}

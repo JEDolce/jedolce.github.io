@@ -11089,6 +11089,17 @@ textarea.form-control-lg {
     font-size: 2.45rem;
   }
 }
+@media (min-width: 1600px) {
+  .intro .hero--left h1 {
+    font-size: 3rem;
+  }
+  .intro .hero--left h2 {
+    font-size: 2rem;
+  }
+  .intro .hero--left p {
+    font-size: 1.5rem;
+  }
+}
 .services {
   min-height: 70vh;
   position: relative;
@@ -11281,6 +11292,11 @@ textarea.form-control-lg {
   }
   .tech .carousel .image-container img {
     height: 5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .tech .carousel {
+    padding-top: 2rem;
   }
 }
 .contact {
