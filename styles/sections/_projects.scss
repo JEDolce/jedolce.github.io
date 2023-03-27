@@ -102,7 +102,9 @@
                 }
             }
 
-            .waste-img {
+            .waste-img,
+            .melo-img,
+            .nutri-img {
                 @include flexCenter;
 
                 .size {

@@ -11263,12 +11263,16 @@ textarea.form-control-lg {
     width: 8rem;
     height: 10rem;
   }
-  .projects .card .waste-img {
+  .projects .card .waste-img,
+  .projects .card .melo-img,
+  .projects .card .nutri-img {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .projects .card .waste-img .size {
+  .projects .card .waste-img .size,
+  .projects .card .melo-img .size,
+  .projects .card .nutri-img .size {
     height: 10rem;
   }
 }
