@@ -11245,11 +11245,11 @@ textarea.form-control-lg {
     width: 10rem;
   }
   .projects .title {
-    transform: translateX(-20vw);
+    transform: translateX(-40vw);
   }
   .projects .title.showTitle {
     transform: translateX(0);
-    transition: ease-in all 0.75s;
+    transition: ease-in 0.75s;
   }
   .projects .card {
     width: 15rem;

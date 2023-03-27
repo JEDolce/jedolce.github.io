@@ -82,11 +82,11 @@
         }
 
         .title {
-            transform: translateX(-20vw);
+            transform: translateX(-40vw);
 
             &.showTitle {
                 transform: translateX(0);
-                transition: ease-in all 0.75s;
+                transition: ease-in 0.75s;
             }
         }
 
