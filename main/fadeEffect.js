@@ -25,8 +25,6 @@ $(document).on("scroll", function () {
     var pageTop = $(document).scrollTop();
     var pageBottom = pageTop + $(window).height();
     var latest = $(".latest");
-    console.log(`pageTop: ${pageTop}`);
-    console.log(`pageBottom: ${pageBottom}`);
 
     for (var i = 0; i < latest.length; i++) {
         if (pageBottom > 1550) {

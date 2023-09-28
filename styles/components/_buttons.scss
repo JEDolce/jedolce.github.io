@@ -62,6 +62,9 @@
     bottom: 1.875rem;
     z-index: 9999;
     background-color: $color-3;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
 
     i {
         color: $white;
@@ -71,4 +74,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
 }
