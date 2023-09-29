@@ -63,25 +63,7 @@
 
         .title {
             text-align: start;
-        }
-    }
-}
 
-@include media-breakpoint-up(lg) {
-
-    .projects {
-        position: relative;
-
-        &--line--right {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            background-image: url('/assets/bg/ttten-fade-left.svg');
-            height: 100%;
-            width: 10rem;
-        }
-
-        .title {
             transform: translateX(-40vw);
 
             &.showTitle {
@@ -102,15 +84,29 @@
                 }
             }
 
-            .waste-img,
-            .melo-img,
-            .nutri-img {
+            .page-img {
                 @include flexCenter;
 
                 .size {
                     height: 10rem;
                 }
             }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .projects {
+        position: relative;
+
+        &--line--right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-image: url('/assets/bg/ttten-fade-left.svg');
+            height: 100%;
+            width: 10rem;
         }
     }
 }

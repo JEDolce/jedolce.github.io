@@ -11188,21 +11188,6 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .projects .title {
     text-align: start;
-  }
-}
-@media (min-width: 992px) {
-  .projects {
-    position: relative;
-  }
-  .projects--line--right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-image: url("/assets/bg/ttten-fade-left.svg");
-    height: 100%;
-    width: 10rem;
-  }
-  .projects .title {
     transform: translateX(-40vw);
   }
   .projects .title.showTitle {
@@ -11221,17 +11206,26 @@ textarea.form-control-lg {
     width: 8rem;
     height: 10rem;
   }
-  .projects .card .waste-img,
-  .projects .card .melo-img,
-  .projects .card .nutri-img {
+  .projects .card .page-img {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .projects .card .waste-img .size,
-  .projects .card .melo-img .size,
-  .projects .card .nutri-img .size {
+  .projects .card .page-img .size {
     height: 10rem;
+  }
+}
+@media (min-width: 992px) {
+  .projects {
+    position: relative;
+  }
+  .projects--line--right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("/assets/bg/ttten-fade-left.svg");
+    height: 100%;
+    width: 10rem;
   }
 }
 .tech .carousel .image-container img {
