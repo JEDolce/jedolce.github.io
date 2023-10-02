@@ -10853,6 +10853,7 @@ textarea.form-control-lg {
 .intro {
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 .intro .navbar a {
   font-weight: 500;
@@ -11403,7 +11404,6 @@ footer .copy a {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  overflow-x: hidden;
 }
 
 body {
